@@ -14,14 +14,14 @@ for i in range(len(fileData)):
 
 #mode
 data = Counter(newData)
-modeRange = {'50-60':0, '60-70':0,'70-80':0}
+modeRange = {'100-120':0, '120-140':0,'140-160':0}
 
-for height,occurence in data.items():
-    if 50 < float(height) < 60:
+for weight,occurence in data.items():
+    if 50 < float(weight) < 60:
         modeRange['50-60'] += occurence
-    elif 60 < float(height) < 70:
+    elif 60 < float(weight) < 70:
         modeRange['60-70'] += occurence
-    elif 70 < float(height) < 80:
+    elif 70 < float(weight) < 80:
         modeRange['70-80'] += occurence
 
 mode_Range,mode_Occurence = 0,0
